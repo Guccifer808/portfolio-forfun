@@ -3,11 +3,11 @@ import css from './Header.module.scss';
 import { motion } from 'framer-motion';
 import { getMenuStyles, headerVariants } from '../../utils/motion';
 import { BiPhoneCall, BiMenuAltRight } from 'react-icons/bi';
-import useHeaderShadow from '../../portfolio-2/hooks/useHeaderShadow';
+import useHeaderShadow from '../../hooks/useHeaderShadow';
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
-  //mob nav shadow
+  //header shadow hook
   const headerShadow = useHeaderShadow();
 
   return (
@@ -17,6 +17,7 @@ const Header = () => {
       variants={headerVariants}
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper}`}
+      style={{ boxShadow: headerShadow }}
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
         <div className={css.name}>Serhii</div>
