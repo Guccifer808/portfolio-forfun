@@ -20,7 +20,7 @@ const Header = () => {
       style={{ boxShadow: headerShadow }}
     >
       <div className={`flexCenter innerWidth ${css.container}`}>
-        <div className={css.name}>Serhii</div>
+        <div className={css.name}>Portfolio</div>
         {/* navlist */}
         <ul
           className={`flexCenter ${css.navlist}`}

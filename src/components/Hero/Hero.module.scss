@@ -1,0 +1,45 @@
+@import '../../styles/constants.scss';
+
+.wrapper {
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 1;
+
+    .upperElements {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .lowerElements {
+      margin-top: 12rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .experience {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &:nth-child(2) {
+          line-height: 25px;
+        }
+      }
+
+      .certificate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          margin-bottom: 1rem;
+          width: 3.5rem;
+        }
+      }
+    }
+  }
+}
